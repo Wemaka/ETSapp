@@ -1,0 +1,150 @@
+.maritime {
+    // padding: 20px;
+
+    &__title {
+    }
+
+    &__text {
+    }
+}
+
+.maritime__main {
+    // display: flex;
+    // flex-direction: column;
+    // gap: 50px;
+    // margin-top: 50px;
+}
+
+.table-container {
+    // margin: 10px 0;
+    width: fit-content;
+}
+
+.table-input {
+    border: none;
+    height: 100%;
+    max-width: 110px;
+}
+
+.table-one {
+    position: relative;
+    margin-bottom: 10px;
+
+    &__table {
+    }
+
+    &__input {
+    }
+
+    &:hover {
+        .add-col-btn {
+            display: flex;
+        }
+    }
+}
+
+.drag-indicator {
+    width: 10px;
+    height: 14px;
+}
+
+.changeCol {
+    position: relative;
+
+    &:hover {
+        .del-col-btn-container {
+            display: flex;
+        }
+    }
+}
+
+.del-col-btn-container {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    // left: calc(50% - 30px / 2);
+    left: 0;
+    width: 100%;
+    padding-bottom: 2px;
+
+    &.active {
+        display: flex;
+    }
+}
+
+.del-col-btn {
+    $width: 30px;
+    $height: 5px;
+
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+
+    &__icon {
+        width: $width;
+        height: $height;
+    }
+
+    &__dot {
+        margin-left: -2px;
+        margin-bottom: -2px;
+        transform: rotate(90deg);
+    }
+}
+
+.add-col-btn {
+    $width: 26px;
+    $height: $width + 2;
+
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: calc(50% + 4px);
+    left: 100%;
+    padding-left: 2px;
+
+    &:hover {
+        display: flex;
+    }
+
+    &__icon {
+        width: $width;
+        height: $height;
+    }
+
+    &__dot {
+    }
+}
+
+td,
+th {
+    vertical-align: middle;
+    text-align: center;
+    color: var(--black);
+}
+
+th {
+    // font-weight: bold;
+}
+
+table,
+th,
+td {
+    border: 2px solid var(--blue);
+    padding: 5px;
+}
+
+td {
+    min-height: 50px;
+    min-width: 100px;
+}
+
+.one-result,
+.two-result,
+.three-result,
+.four-result {
+    &.active {
+        display: block;
+    }
+}

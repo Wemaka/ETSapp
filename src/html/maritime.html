@@ -1,0 +1,285 @@
+{% extends "base-index.html" %}
+
+{% block title %} Maritime {% endblock %}
+
+{% block main %}
+<section class="maritime container" data-barba="container" data-barba-namespace="maritime">
+    <div class="preloader"></div>
+
+    <a class="maritime__title title title-link title-bold" href="../../index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+            <path d="M6 12L0 6L6 0L7.4 1.45L3.85 5H16V7H3.85L7.4 10.55L6 12Z" fill="#2E6EC3">
+        </svg>
+        <h1 class="maritime__title-text">Морской транспорт</h1>
+    </a>
+
+    <div class="maritime__main task">
+        <div class="task__one">
+            <div class="table-one table-container">
+                <table class="table-one__table table">
+                    <thead>
+                        <tr class="table-one__title-row">
+                            <th>&nbsp;</th>
+                            <th><span class="table-one__title-text">А</span></th>
+                            <th><span class="table-one__title-text">Б</span></th>
+                            <th><span class="table-one__title-text">В</span></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="table-one__row-one">
+                            <th>Погрузка,<br>тыс. т</th>
+                            <td><input class="table-one__input table-input" type="number"></td>
+                            <td><input class="table-one__input table-input" type="number"></td>
+                            <!-- <td><input class="table-one__input" type="number"></td> -->
+                            <td class="inactive">0</td>
+                        </tr>
+
+                        <tr class="table-one__row-two">
+                            <th>Выгрузка,<br>тыс. т</th>
+                            <td class="inactive">0</td>
+                            <!-- <td><input class="table-one__input" type="number"></td> -->
+                            <td><input class="table-one__input table-input" type="number"></td>
+                            <td>
+                                <input class="table-one__input table-input" type="number">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <button class="add-col-btn button-reset">
+                    <svg class="add-col-btn__dot drag-indicator" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14"
+                        fill="none">
+                        <path
+                            d="M2.14168 12.0581C1.74598 12.0581 1.40725 11.9158 1.12546 11.6311C0.843681 11.3464 0.702789 11.0042 0.702789 10.6045C0.702789 10.2048 0.843681 9.86257 1.12546 9.57791C1.40725 9.29326 1.74598 9.15092 2.14168 9.15092C2.53737 9.15092 2.87611 9.29326 3.15789 9.57791C3.43968 9.86257 3.58057 10.2048 3.58057 10.6045C3.58057 11.0042 3.43968 11.3464 3.15789 11.6311C2.87611 11.9158 2.53737 12.0581 2.14168 12.0581ZM6.45834 12.0581C6.06265 12.0581 5.72391 11.9158 5.44213 11.6311C5.16035 11.3464 5.01946 11.0042 5.01946 10.6045C5.01946 10.2048 5.16035 9.86257 5.44213 9.57791C5.72391 9.29326 6.06265 9.15092 6.45834 9.15092C6.85404 9.15092 7.19278 9.29326 7.47456 9.57791C7.75634 9.86257 7.89723 10.2048 7.89723 10.6045C7.89723 11.0042 7.75634 11.3464 7.47456 11.6311C7.19278 11.9158 6.85404 12.0581 6.45834 12.0581ZM2.14168 7.69734C1.74598 7.69734 1.40725 7.55502 1.12546 7.27036C0.843681 6.9857 0.702789 6.6435 0.702789 6.24376C0.702789 5.84403 0.843681 5.50183 1.12546 5.21717C1.40725 4.93251 1.74598 4.79018 2.14168 4.79018C2.53737 4.79018 2.87611 4.93251 3.15789 5.21717C3.43968 5.50183 3.58057 5.84403 3.58057 6.24376C3.58057 6.6435 3.43968 6.9857 3.15789 7.27036C2.87611 7.55502 2.53737 7.69734 2.14168 7.69734ZM6.45834 7.69734C6.06265 7.69734 5.72391 7.55502 5.44213 7.27036C5.16035 6.9857 5.01946 6.6435 5.01946 6.24376C5.01946 5.84403 5.16035 5.50183 5.44213 5.21717C5.72391 4.93251 6.06265 4.79018 6.45834 4.79018C6.85404 4.79018 7.19278 4.93251 7.47456 5.21717C7.75634 5.50183 7.89723 5.84403 7.89723 6.24376C7.89723 6.6435 7.75634 6.9857 7.47456 7.27036C7.19278 7.55502 6.85404 7.69734 6.45834 7.69734ZM2.14168 3.3366C1.74598 3.3366 1.40725 3.19427 1.12546 2.90961C0.843681 2.62496 0.702789 2.28276 0.702789 1.88302C0.702789 1.48329 0.843681 1.14109 1.12546 0.856433C1.40725 0.571773 1.74598 0.429443 2.14168 0.429443C2.53737 0.429443 2.87611 0.571773 3.15789 0.856433C3.43968 1.14109 3.58057 1.48329 3.58057 1.88302C3.58057 2.28276 3.43968 2.62496 3.15789 2.90961C2.87611 3.19427 2.53737 3.3366 2.14168 3.3366ZM6.45834 3.3366C6.06265 3.3366 5.72391 3.19427 5.44213 2.90961C5.16035 2.62496 5.01946 2.28276 5.01946 1.88302C5.01946 1.48329 5.16035 1.14109 5.44213 0.856433C5.72391 0.571773 6.06265 0.429443 6.45834 0.429443C6.85404 0.429443 7.19278 0.571773 7.47456 0.856433C7.75634 1.14109 7.89723 1.48329 7.89723 1.88302C7.89723 2.28276 7.75634 2.62496 7.47456 2.90961C7.19278 3.19427 6.85404 3.3366 6.45834 3.3366Z"
+                            fill="#D5D5D5" />
+                    </svg>
+                    <svg class="add-col-btn__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 20" fill="none">
+                        <path
+                            d="M7.86667 11.1965H0.466675V8.55812H7.86667V0.642822H10.3333V8.55812H17.7333V11.1965H10.3333V19.1118H7.86667V11.1965Z"
+                            fill="#00008B" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="table-two table-container">
+                <table class="table-two__table table">
+                    <thead>
+                        <tr class="table-two__title-row">
+                            <th>&nbsp;</th>
+                            <th><span class="table-two__title-text">А-Б</span></th>
+                            <th><span class="table-two__title-text">Б-В</span></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="table-two__row-one">
+                            <th>Расстояние, <br>мили</th>
+                            <td><input class="table-two__input table-input" type="number"></td>
+                            <td><input class="table-two__input table-input" type="number"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <button class="task-one__button apply-button button-reset">Применить</button>
+
+            <div class="one-result res-cont">
+                <div class="three-result__info res-cont__info">(Результат округлен до целых.)</div>
+                <div class="one-result__one"></div>
+                <div class="one-result__two"></div>
+            </div>
+        </div>
+
+        <div class="task__two">
+            <div class="table-three table-container">
+                <table class="table-three__table table">
+                    <thead>
+                        <tr class="table-three__title-row">
+                            <th>
+                                <span class="table-three__title-text">
+                                    Расстояние<br>между портами,<br>миль
+                                </span>
+                            </th>
+                            <th>
+                                <span class="table-three__title-text">
+                                    Эксплуатационаая<br>скорость,<br>миль/сут
+                                </span>
+                            </th>
+                            <th>
+                                <span class="table-three__title-text">
+                                    Чистая<br>грузоподъемность,<br>тыс. т
+                                </span>
+                            </th>
+                            <th>
+                                <span class="table-three__title-text">
+                                    Интенсивность<br>погрузки,<br>тыс.т/сут
+                                </span>
+                            </th>
+                            <th>
+                                <span class="table-three__title-text">
+                                    Интенсивность<br>выгрузки,<br>тыс.т/сут
+                                </span>
+                            </th>
+                            <th>
+                                <span class="table-three__title-text">
+                                    Дополнительный<br>простой за рейс,<br>сут.
+                                </span>
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="table-three__row-one">
+                            <td><input class="table-three__input table-input" type="number"></td>
+                            <td><input class="table-three__input table-input" type="number"></td>
+                            <td><input class="table-three__input table-input" type="number"></td>
+                            <td><input class="table-three__input table-input" type="number"></td>
+                            <td><input class="table-three__input table-input" type="number"></td>
+                            <td><input class="table-three__input table-input" type="number"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <button class="task-two__button apply-button button-reset">Применить</button>
+
+            <div class="two-result res-cont">
+                <div class="three-result__info res-cont__info">(Результат округлен до целых.)</div>
+                <div class="two-result__one"></div>
+                <div class="two-result__two"></div>
+            </div>
+        </div>
+
+        <div class="task__three">
+            <div class="table-four table-container">
+                <table class="table-four__table table">
+                    <thead>
+                        <tr class="table-four__title-row">
+                            <th>
+                                <span class="table-four__title-text">
+                                    Чистая<br>грузоподъемность,<br>тыс. т
+                                </span>
+                            </th>
+                            <th>
+                                <span class="table-four__title-text">
+                                    Эксплуатационаая<br>скорость,<br>миль/сут
+                                </span>
+                            </th>
+                            <th>
+                                <span class="table-four__title-text">
+                                    Расстояние<br>между портами,<br>А и Б,<br>миль
+                                </span>
+                            </th>
+                            <th>
+                                <span class="table-four__title-text">
+                                    Количество груза,<br>т
+                                </span>
+                            </th>
+                            <th>
+                                <span class="table-four__title-text">
+                                    Валовая норма<br>грузовых работ<br>в порту А,<br>т/сут
+                                </span>
+                            </th>
+                            <th>
+                                <span class="table-four__title-text">
+                                    Валовая норма<br>грузовых работ<br>в порту Б,<br>т/сут
+                                </span>
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="table-four__row-one">
+                            <td><input class="table-four__input table-input" type="number"></td>
+                            <td><input class="table-four__input table-input" type="number"></td>
+                            <td><input class="table-four__input table-input" type="number"></td>
+                            <td><input class="table-four__input table-input" type="number"></td>
+                            <td><input class="table-four__input table-input" type="number"></td>
+                            <td><input class="table-four__input table-input" type="number"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <button class="task-three__button apply-button button-reset">Применить</button>
+
+            <div class="three-result res-cont">
+                <div class="three-result__info res-cont__info">(Результат округлен до целых.)</div>
+                <div class="three-result__one"></div>
+                <div class="three-result__two"></div>
+            </div>
+        </div>
+
+        <div class="task__four">
+            <div class="table-five table-container">
+                <table class="table-five__table table">
+                    <thead>
+                        <tr class="table-five__title-row">
+                            <th>
+                                <span class="table-five__title-text">
+                                    Чистая<br>грузоподъемность,<br>т
+                                </span>
+                            </th>
+                            <th>
+                                <span class="table-five__title-text">
+                                    Эксплуатационаая<br>скорость,<br>миль/сут.
+                                </span>
+                            </th>
+                            <th>
+                                <span class="table-five__title-text">
+                                    Расстояние<br>между портами,<br>А и Б,<br>миль
+                                </span>
+                            </th>
+                            <th>
+                                <span class="table-five__title-text">
+                                    Количество груза,<br>т
+                                </span>
+                            </th>
+                            <th>
+                                <span class="table-five__title-text">
+                                    Валовая норма<br>грузовых работ<br>в порту А,<br>т/сут.
+                                </span>
+                            </th>
+                            <th>
+                                <span class="table-five__title-text">
+                                    Валовая норма<br>грузовых работ<br>в порту Б,<br>т/сут.
+                                </span>
+                            </th>
+                            <th>
+                                <span class="table-five__title-text">
+                                    Продолжительность<br>навигации,<br>сут.
+                                </span>
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="table-five__row-one">
+                            <td><input class="table-five__input table-input" type="number"></td>
+                            <td><input class="table-five__input table-input" type="number"></td>
+                            <td><input class="table-five__input table-input" type="number"></td>
+                            <td><input class="table-five__input table-input" type="number"></td>
+                            <td><input class="table-five__input table-input" type="number"></td>
+                            <td><input class="table-five__input table-input" type="number"></td>
+                            <td><input class="table-five__input table-input" type="number"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <button class="task-four__button apply-button button-reset">Применить</button>
+
+            <div class="four-result res-cont">
+                <div class="four-result__info res-cont__info">(Результат округлен до целых.)</div>
+                <div class="four-result__one"></div>
+                <div class="four-result__two"></div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block script %}
+<script class="maritime-script" type="module" src="/ETSuni/ets-app/src/js/maritime.js"></script>
+{% endblock %}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <!-- style -->
+    <script class="main-script" type="module" src="/ETSuni/ets-app/src/js/main.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="page" data-barba="wrapper">
+            {% block main %}
+            {% endblock %}
+        </main>
+    </div>
+
+    <script type="module" src="/ETSuni/ets-app/src/js/animate.js"></script>
+    {% block script %}
+    {% endblock %}
+    <!-- <script class="maritime-script" type="module" src="/ETSuni/ets-app/src/js/maritime.js"></script> -->
+    <!-- <script class="maritime-script" type="module" src="/ETSuni/ets-app/src/js/railroad.js"></script> -->
+</body>
+
+</html>

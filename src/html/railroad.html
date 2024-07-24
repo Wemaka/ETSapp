@@ -1,0 +1,98 @@
+{% extends "base-index.html" %}
+
+{% block title %} Railroad {% endblock %}
+
+{% block main %}
+<section class="railroad container" data-barba="container" data-barba-namespace="railroad">
+	<div class="preloader"></div>
+
+	<a class="railroad__title title title-link title-bold" href="../../index.html">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+			<path d="M6 12L0 6L6 0L7.4 1.45L3.85 5H16V7H3.85L7.4 10.55L6 12Z" fill="#2E6EC3">
+		</svg>
+		<h1 class="railroad__title-text">Железнодорожный транспорт</h1>
+	</a>
+
+	<div class="railroad__main task">
+		<div class="task__one">
+			<canvas class="platform-one-canvas"></canvas>
+
+			<h2 class="task__title title">Выберите тип платформы</h2>
+			<div class="type-platform controls">
+				<label class="controls__control radio">
+					<input class="radio__input" type="radio" value="низкая" name="one-platform-button" checked>
+					<span class="radio__text">низкая</span>
+				</label>
+				<label class="controls__control radio">
+					<input class="radio__input" type="radio" value="высокая" name="one-platform-button">
+					<span class="radio__text">высокая</span>
+				</label>
+			</div>
+
+			<h2 class="task__title title">Выберите ширину платформы</h2>
+			<div class="width-platform">
+				<label class="width-platform__range range">
+					<input class="range__input" type="range" min="6" max="11" step="1" value="6">
+					<span class="range__text">6</span>
+				</label>
+			</div>
+
+			<button class="task-one__button apply-button button-reset">Применить</button>
+
+			<div class="one-result res-cont">
+				<div class="one-result__one"></div>
+			</div>
+		</div>
+
+		<div class="task__two">
+			<canvas class="platform-two-canvas"></canvas>
+
+			<h2 class="task__title title">Введите междупутье (e) в мм</h2>
+			<input class="intertrack" type="number" value="9490" step="10">
+
+			<h2 class="task__title title">Выберите тип платформы</h2>
+			<div class="type-platform controls">
+				<label class="controls__control radio">
+					<input class="radio__input" type="radio" value="низкая" name="two-platform-button" checked>
+					<span class="radio__text">низкая</span>
+				</label>
+				<label class="controls__control radio">
+					<input class="radio__input" type="radio" value="высокая" name="two-platform-button">
+					<span class="radio__text">высокая</span>
+				</label>
+			</div>
+
+			<button class="task-two__button apply-button button-reset">Применить</button>
+
+			<div class="two-result res-cont">
+				<div class="two-result__one"></div>
+			</div>
+		</div>
+
+		<div class="task__three">
+			<canvas class="platform-three-canvas"></canvas>
+
+			<h2 class="task__title title">Введите междупутье (e) в мм</h2>
+			<input class="intertrack" type="number" value="9490" step="10">
+
+			<h2 class="task__title title">Выберите ширину платформы</h2>
+			<div class="width-platform">
+				<label class="width-platform__range range">
+					<input class="range__input" type="range" min="6" max="11" step="1" value="6">
+					<span class="range__text">6</span>
+				</label>
+			</div>
+
+			<button class="task-three__button apply-button button-reset">Применить</button>
+
+			<div class="three-result res-cont">
+				<div class="three-result__one"></div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}
+
+{% block script %}
+<script class="maritime-script" type="module" src="/ETSuni/ets-app/src/js/railroad.js"></script>
+{% endblock %}

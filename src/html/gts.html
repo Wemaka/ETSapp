@@ -1,0 +1,262 @@
+{% extends "base-index.html" %}
+
+{% block title %} GTS {% endblock %}
+
+{% block main %}
+<section class="gts container" data-barba="container" data-barba-namespace="gts">
+    <div class="preloader"></div>
+
+    <a class="gts__title title title-link title-bold" href="../../index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+            <path d="M6 12L0 6L6 0L7.4 1.45L3.85 5H16V7H3.85L7.4 10.55L6 12Z" fill="#2E6EC3">
+        </svg>
+        <h1 class="gts__title-text">Городские транспортные
+            системы</h1>
+    </a>
+
+    <div class="gts__main task">
+        <div class="task__one">
+            <div class="table-one table-container">
+                <table class="table-one__table table">
+                    <caption>
+                        Характеристика стран мира и их​ транспортных систем
+                    </caption>
+
+                    <thead>
+                        <tr class="table-one__title-row">
+                            <th>
+                                <span class="table-one__title-text">
+                                    №<br>п/п
+                                </span>
+                            </th>
+                            <th>
+                                <span class="table-one__title-text">
+                                    Страна
+                                </span>
+                            </th>
+                            <th>
+                                <span class="table-one__title-text">
+                                    Площадь<br>территории,<br>(км<sup>2</sup>) S
+                                </span>
+                            </th>
+                            <th>
+                                <span class="table-one__title-text">
+                                    Численность<br>населения,<br>чел Н
+                                </span>
+                            </th>
+                            <th>
+                                <span class="table-one__title-text">
+                                    Протяженность эксп.<br>длины ж.д. путей,<br>км, Lэ
+                                </span>
+                            </th>
+                            <th>
+                                <span class="table-one__title-text">
+                                    Протяженность эксп.<br>длины авто дорог,<br>тыс. км, Lэ
+                                </span>
+                            </th>
+                            <th>
+                                <span class="table-one__title-text">
+                                    Протяженность речных<br>путей,<br>км, Lэ
+                                </span>
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="table-one__row-one">
+                            <th>
+                                1
+                            </th>
+                            <td>Россия</td>
+                            <td>17075200</td>
+                            <td>143000000</td>
+                            <td>87157</td>
+                            <td>624.2</td>
+                            <td>102000</td>
+                        </tr>
+                        <tr class="table-one__row-two">
+                            <th>
+                                2
+                            </th>
+                            <td>Германия</td>
+                            <td>357021</td>
+                            <td>81305856</td>
+                            <td>41981</td>
+                            <td>644.4</td>
+                            <td>7467</td>
+                        </tr>
+                        <tr class="table-one__row-three">
+                            <th>
+                                3
+                            </th>
+                            <td>Боливия</td>
+                            <td>1098581</td>
+                            <td>10500</td>
+                            <td>3652</td>
+                            <td>53.3</td>
+                            <td>10000</td>
+                        </tr>
+                        <tr class="table-one__row-four">
+                            <th>
+                                4
+                            </th>
+                            <td>Алжир</td>
+                            <td>2381740</td>
+                            <td>37367226</td>
+                            <td>3973</td>
+                            <td>104</td>
+                            <td>-</td>
+                        </tr>
+                        <tr class="table-one__row-five">
+                            <th>
+                                5
+                            </th>
+                            <td>Австралия</td>
+                            <td>7686850</td>
+                            <td>22015576</td>
+                            <td>38445</td>
+                            <td>813.2</td>
+                            <td>2000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-two table-container">
+                <table class="table-two__table table">
+                    <caption>
+                        Показатели транспортной обеспеченности
+                    </caption>
+
+                    <thead>
+                        <tr class="table-two__title-row">
+                            <th rowspan="2">
+                                Страна
+                            </th>
+                            <th colspan="4">
+                                <span class="table-two__title-text title-bold" colspan="4">
+                                    Железнодорожный<br>транспорт
+                                </span>
+                            </th>
+                            <th colspan="4">
+                                <span class="table-two__title-text title-bold" colspan="4">
+                                    Автомобильный<br>транспорт
+                                </span>
+                            </th>
+                            <th colspan="4">
+                                <span class="table-two__title-text title-bold" colspan="4">
+                                    Речной<br>транспорт
+                                </span>
+                            </th>
+                        </tr>
+
+                        <tr class="table-two__title-row">
+                            <th>Lэ,<br>км</th>
+                            <th>ds</th>
+                            <th>dн</th>
+                            <th>dэ</th>
+                            <th>Lэ,<br>тыс. км</th>
+                            <th>ds</th>
+                            <th>dн</th>
+                            <th>dэ</th>
+                            <th>Lэ,<br>км</th>
+                            <th>ds</th>
+                            <th>dн</th>
+                            <th>dэ</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="table-two__row-one">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="table-two__row-two">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="table-two__row-three">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="table-two__row-four">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="table-two__row-five">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="one-result res-cont" style="display: block;">
+                <!-- <div class="one-result__one"></div>
+                <div class="one-result__two"></div> -->
+            </div>
+        </div>
+
+        <canvas id="myChart"></canvas>
+    </div>
+</section>
+{% endblock %}
+
+{% block script %}
+<script class="maritime-script" type="module" src="/ETSuni/ets-app/src/js/gts.js"></script>
+{% endblock %}

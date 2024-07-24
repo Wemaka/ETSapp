@@ -1,0 +1,55 @@
+{% extends "base-index.html" %}
+
+{% block title %} Home {% endblock %}
+
+{% block main %}
+<section class="home" data-barba="container" data-barba-namespace="home">
+	<div class="preloader"></div>
+
+	<div class="home-container">
+		<header class="home-header">
+			<h2 class="home-header__text title title-bold">РУТ (МИИТ)</h2>
+			<img class="home-header__logo" src="./public/favicon/miit-logo.svg" alt="логотип миита">
+			<!-- <div class="home-header__logo-container">
+            </div> -->
+		</header>
+
+		<div class="home-main">
+			<div class="home-main__title title title-bold">
+				<h1 class="home-main__text">Выберите тип транспорта</h1>
+			</div>
+
+			<nav class="home-main__nav">
+				<ul class="home-main__links">
+					<li class="home-main__item">
+						<a class="home-main__link" href="./src/html/automobile.html"
+							data-slug="automobile">Автомобильный</a>
+					</li>
+					<li class="home-main__item">
+						<a class="home-main__link" href="./src/html/maritime.html" data-slug="maritime">Морской</a>
+					</li>
+					<li class="home-main__item">
+						<a class="home-main__link" href="./src/html/railroad.html"
+							data-slug="railroad">Железнодорожный</a>
+					</li>
+					<li class="home-main__item">
+						<a class="home-main__link" href="./src/html/air.html" data-slug="air">Воздушный</a>
+					</li>
+					<li class="home-main__item">
+						<a class="home-main__link" href="./src/html/gts.html" data-slug="gts">Городские транспортные
+							системы</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<footer class="home-footer">
+			<div class="home-footer__about title title-bold">
+				<h2 class="home-footer__text">Выполнил: Кирилин А.В.</h2>
+				<h2 class="home-footer__text">Группа: УТИ-111</h2>
+				<h2 class="home-footer__text">Вариант: 18</h2>
+			</div>
+		</footer>
+	</div>
+</section>
+{% endblock %}
